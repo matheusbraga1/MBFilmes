@@ -7,5 +7,5 @@ public class Profile
 
     public string UserId { get; set; } = string.Empty;
 
-    public ICollection<Movie> Movies { get; set; } = [];
+    public ICollection<FavoriteMovie> FavoriteMovies { get; set; } = [];
 }
