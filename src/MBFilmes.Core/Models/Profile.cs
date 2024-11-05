@@ -1,4 +1,6 @@
-﻿namespace MBFilmes.Core.Models;
+﻿using System.Text.Json.Serialization;
+
+namespace MBFilmes.Core.Models;
 
 public class Profile
 {
@@ -7,5 +9,6 @@ public class Profile
 
     public string UserId { get; set; } = string.Empty;
 
+    [JsonIgnore]
     public ICollection<WatchList> WatchLists { get; set; } = [];
 }
