@@ -6,9 +6,9 @@ namespace MBFilmes.Core.Handlers;
 
 public interface IProfileHandler
 {
-    Task<BaseResponse<Profile>> CreateAsync(CreateProfileRequest request);
-    Task<BaseResponse<Profile>> UpdateAsync(UpdateProfileRequest request);
-    Task<BaseResponse<Profile>> DeleteAsync(DeleteProfileRequest request);
-    Task<BaseResponse<Profile>> GetByIdAsync(GetProfileByIdRequest request);
-    Task<BaseResponse<List<Profile>>> GetAllAsync(GetAllProfilesRequest request);
+    Task<BaseResponse<Profile?>> CreateAsync(CreateProfileRequest request);
+    Task<BaseResponse<Profile?>> UpdateAsync(UpdateProfileRequest request);
+    Task<BaseResponse<Profile?>> DeleteAsync(DeleteProfileRequest request);
+    Task<BaseResponse<Profile?>> GetByIdAsync(GetProfileByIdRequest request);
+    Task<BaseResponse<List<Profile>?>> GetAllAsync(GetAllProfilesRequest request);
 }
