@@ -21,4 +21,20 @@
     <ProjectReference Include="..\MBFilmes.Core\MBFilmes.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Common\Endpoints\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Common\Endpoints\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Common\Endpoints\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\Endpoints\**" />
+  </ItemGroup>
+
 </Project>
